@@ -15,7 +15,7 @@
   const v = d.createElement("script");
   v.src = "https://vjs.zencdn.net/8.16.1/video.min.js";
   v.async = true;
-  v.onload = function () {
+  v.onload = () => {
     videojs.options.controlBar = {
       children: [
         "playToggle",
@@ -46,6 +46,9 @@
     videojs.options.playbackRates = [1, 1.25, 1.5, 1.75, 2];
     videojs.options.preferFullWindow = true;
     videojs.options.responsive = true;
+    d.styleSheets[0].insertRule(
+      ".video-js video.vjs-tech { position: relative; }"
+    );
   };
   d.head.appendChild(v);
   const l = d.createElement("link");
