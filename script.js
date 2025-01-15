@@ -41,6 +41,7 @@
     videojs.options.html5.nativeAudioTracks = false;
     videojs.options.html5.nativeTextTracks = videojs.browser.IS_IPHONE;
     videojs.options.html5.nativeVideoTracks = false;
+    videojs.options.html5.controls = true;
 
     videojs.options.playbackRates = [1, 1.25, 1.5, 1.75, 2];
     videojs.options.preferFullWindow = true;
