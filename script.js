@@ -19,6 +19,5 @@
   const l = d.createElement("link");
   l.rel = "stylesheet";
   l.href = "https://vjs.zencdn.net/8.16.1/video-js.css";
-  v.async = true;
   d.head.appendChild(l);
 })(document);
